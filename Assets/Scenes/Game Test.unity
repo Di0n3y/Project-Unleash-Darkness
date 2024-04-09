@@ -1551,11 +1551,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: {fileID: 699371782}
   Door: {fileID: 1663513276}
-  _limitDoorUp: {fileID: 668249992}
-  _limitDoorDown: {fileID: 1995195803}
   hasKey: 0
   moveDoor: 0
-  moveDoorDown: 0
 --- !u!95 &1765484897
 Animator:
   serializedVersion: 7
