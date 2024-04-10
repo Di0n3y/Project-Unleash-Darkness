@@ -33,7 +33,7 @@ public class Keys : MonoBehaviour
 
         if (moveDoor == true)
         {
-            Door.transform.Rotate(0, -90, 0);
+            Door.transform.Rotate(0, -1* Time.deltaTime, 0);
         }
     }
 

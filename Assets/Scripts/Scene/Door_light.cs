@@ -20,6 +20,7 @@ public class Door_light : MonoBehaviour
     void Start()
     {
         floorLights = 0;
+
         _openDoor = false;
     }
 
@@ -40,9 +41,9 @@ public class Door_light : MonoBehaviour
 
         if (moveDoorUp == true)
         {
-            transform.Translate(0, +1 * Time.deltaTime, 0);
+            transform.Translate(0, 1 * Time.deltaTime, 0);
             resetFloor = Object.FindFirstObjectByType<Floor_Light>();
-            resetFloor.resettingFloor = +1;
+            resetFloor.resettingFloor = 1;
         }
         else if (moveDoorUp == false)
         {
