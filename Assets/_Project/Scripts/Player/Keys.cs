@@ -22,7 +22,9 @@ public class Keys : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Key.SetActive(true);
+        hasKey = false;
+        moveDoor = false;
     }
 
     // Update is called once per frame
@@ -30,11 +32,12 @@ public class Keys : MonoBehaviour
 
     {
        
-
-        if (moveDoor == true)
+        if (hasKey == false) 
         {
-            Door.transform.Rotate(0, -1* Time.deltaTime, 0);
+            moveDoor = false;
+
         }
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -45,13 +48,22 @@ public class Keys : MonoBehaviour
             hasKey = true;
             Key.SetActive(false);
 
-        } else if ((collision.gameObject.tag == "Door") && (hasKey == true))
+        } if ((collision.gameObject.tag == "Door") && (hasKey == true))
         {
 
             hasKey = false;
             moveDoor= true;
 
 
+        }
+        if (moveDoor == true)
+        {
+            Door.transform.Rotate(0, 90, 0);
+            Door.transform.Translate(0, 0, -1);
+        }else if (moveDoor == false)
+        {
+            Door.transform.Rotate(0, 0, 0);
+            Door.transform.Translate(0, 0, 0);
         }
 
 

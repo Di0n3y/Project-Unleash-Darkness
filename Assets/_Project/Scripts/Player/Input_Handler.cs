@@ -65,7 +65,7 @@ public class Input_Handler : MonoBehaviour
         }
         if (Input.GetKeyDown("space") && playerIsOnGround)
         {
-            rb.AddForce(new Vector3(0, 7, 0), ForceMode.Impulse);
+            rb.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse);
             playerIsOnGround = false;
             animator.SetTrigger("Jump");
 
