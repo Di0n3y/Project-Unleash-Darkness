@@ -8,13 +8,18 @@ public class Keys : MonoBehaviour
 {
     
 
+    [SerializeField] private GameObject Door1;
+    [SerializeField] private GameObject Door2;
+    [SerializeField] private GameObject Door3;
+    [SerializeField] private GameObject Door4;
 
-    [SerializeField] private GameObject Key;
-    [SerializeField] private GameObject Door;
-  
 
     public bool hasKey = false;
-    public bool moveDoor = false;
+    public int keyCount;
+    public bool moveDoor1 = false;
+    public bool moveDoor2 = false;
+    public bool moveDoor3 = false;
+    public bool moveDoor4 = false;
 
 
 
@@ -22,9 +27,11 @@ public class Keys : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Key.SetActive(true);
         hasKey = false;
-        moveDoor = false;
+        moveDoor1 = false;
+        moveDoor2 = false;
+        moveDoor3 = false;
+        moveDoor4 = false;
     }
 
     // Update is called once per frame
@@ -32,10 +39,15 @@ public class Keys : MonoBehaviour
 
     {
        
-        if (hasKey == false) 
+       if(keyCount >=1)
         {
-            moveDoor = false;
-
+            hasKey=true;
+        }if(keyCount == 0) 
+        {
+            hasKey = false;
+        }else if(keyCount < 0) 
+        {
+            keyCount = 0;
         }
         
     }
@@ -45,28 +57,71 @@ public class Keys : MonoBehaviour
 
         if (collision.gameObject.tag == "Key")
         {
-            hasKey = true;
-            Key.SetActive(false);
+            keyCount++;
 
         } if ((collision.gameObject.tag == "Door") && (hasKey == true))
         {
 
-            hasKey = false;
-            moveDoor= true;
+            keyCount--;
+            moveDoor1= true;
 
 
         }
-        if (moveDoor == true)
+        if (moveDoor1 == true)
         {
-            Door.transform.Rotate(0, 90, 0);
-            Door.transform.Translate(0, 0, -1);
-        }else if (moveDoor == false)
-        {
-            Door.transform.Rotate(0, 0, 0);
-            Door.transform.Translate(0, 0, 0);
+            Door1.transform.Rotate(0, 90, 0);
+            Door1.transform.Translate(0, 0, -1);
+            moveDoor1 = false;
         }
+
+        if ((collision.gameObject.tag == "Door2") && (hasKey == true))
+        {
+
+            keyCount--;
+            moveDoor2 = true;
+
+
+        }
+        if (moveDoor2 == true)
+        {
+            Door2.transform.Rotate(0, 90, 0);
+            Door2.transform.Translate(0, 0, -1);
+            moveDoor2 = false;
+        }
+
+        if ((collision.gameObject.tag == "Door3") && (hasKey == true))
+        {
+
+            keyCount--;
+            moveDoor3 = true;
+
+
+        }
+        if (moveDoor3 == true)
+        {
+            Door3.transform.Rotate(0, 90, 0);
+            Door3.transform.Translate(0, 0, -1);
+            moveDoor3 = false;
+        }
+
+        if ((collision.gameObject.tag == "Door4") && (hasKey == true))
+        {
+
+            keyCount--;
+            moveDoor4 = true;
+
+
+        }
+        if (moveDoor4 == true)
+        {
+            Door4.transform.Rotate(0, 90, 0);
+            Door4.transform.Translate(0, 0, -1);
+            moveDoor4 = false;
+        }
+
 
 
     }
+
 
 }
