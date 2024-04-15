@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8770143851560191497
 Transform:
@@ -100,6 +100,11 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 885ebcc43b1fe0c4d95da16fef722b59, type: 2}
+    - target: {fileID: -6293115822902505792, guid: cd761ddbc43fba645867ab14b5476ceb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -6237503072316599021, guid: cd761ddbc43fba645867ab14b5476ceb,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -110,11 +115,21 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 885ebcc43b1fe0c4d95da16fef722b59, type: 2}
+    - target: {fileID: -5283438198820806680, guid: cd761ddbc43fba645867ab14b5476ceb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -4235169804139855755, guid: cd761ddbc43fba645867ab14b5476ceb,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 885ebcc43b1fe0c4d95da16fef722b59, type: 2}
+    - target: {fileID: -4175810845186347462, guid: cd761ddbc43fba645867ab14b5476ceb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -3860440656599532204, guid: cd761ddbc43fba645867ab14b5476ceb,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -125,15 +140,55 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 885ebcc43b1fe0c4d95da16fef722b59, type: 2}
+    - target: {fileID: -1578585125137713742, guid: cd761ddbc43fba645867ab14b5476ceb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -1502081815869470936, guid: cd761ddbc43fba645867ab14b5476ceb,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 885ebcc43b1fe0c4d95da16fef722b59, type: 2}
+    - target: {fileID: -1321740360576348841, guid: cd761ddbc43fba645867ab14b5476ceb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 784124666297153790, guid: cd761ddbc43fba645867ab14b5476ceb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cd761ddbc43fba645867ab14b5476ceb,
         type: 3}
       propertyPath: m_Name
       value: Chains1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd761ddbc43fba645867ab14b5476ceb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2183985124198553937, guid: cd761ddbc43fba645867ab14b5476ceb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315392216913321431, guid: cd761ddbc43fba645867ab14b5476ceb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822792225131869403, guid: cd761ddbc43fba645867ab14b5476ceb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356706098940047327, guid: cd761ddbc43fba645867ab14b5476ceb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7860135081540759327, guid: cd761ddbc43fba645867ab14b5476ceb,
         type: 3}
