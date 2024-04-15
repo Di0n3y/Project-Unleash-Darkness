@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyFollow : MonoBehaviour
 {
     public Transform target;
+    public EnemyActivate yep;
 
 
     void Start()
@@ -15,10 +16,16 @@ public class EnemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(yep.EnemyOn == true)
+        { 
         transform.LookAt(new Vector3(target.position.x, transform.position.y, target.position.z));
 
-        transform.Translate(0, 0, 1 * 2f * Time.deltaTime);
+        transform.Translate(0, 0, 1 * 4f * Time.deltaTime);
+        }else if ( yep.EnemyOn==false)
+        {
+
+            transform.Translate(0, 0, 0);
+        }
 
     }
 }

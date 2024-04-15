@@ -10,8 +10,7 @@ public class Keys : MonoBehaviour
 
     [SerializeField] private GameObject Door1;
     [SerializeField] private GameObject Door2;
-    [SerializeField] private GameObject Door3;
-    [SerializeField] private GameObject Door4;
+
 
 
 
@@ -20,8 +19,7 @@ public class Keys : MonoBehaviour
     public int keyCount;
     public bool moveDoor1 = false;
     public bool moveDoor2 = false;
-    public bool moveDoor3 = false;
-    public bool moveDoor4 = false;
+
 
 
 
@@ -32,8 +30,7 @@ public class Keys : MonoBehaviour
         hasKey = false;
         moveDoor1 = false;
         moveDoor2 = false;
-        moveDoor3 = false;
-        moveDoor4 = false;
+
     }
 
     // Update is called once per frame
@@ -61,11 +58,12 @@ public class Keys : MonoBehaviour
         {
             keyCount++;
 
-        } if ((collision.gameObject.tag == "Door") && (hasKey == true))
+        }
+        if ((collision.gameObject.tag == "Door") && (hasKey == true))
         {
 
             keyCount--;
-            moveDoor1= true;
+            moveDoor1 = true;
 
 
 
@@ -92,40 +90,6 @@ public class Keys : MonoBehaviour
             Door2.transform.Translate(-1, 0, 0);
             moveDoor2 = false;
         }
-
-        if ((collision.gameObject.tag == "Door3") && (hasKey == true))
-        {
-
-            keyCount--;
-            moveDoor3 = true;
-         
-
-
-        }
-        if (moveDoor3 == true)
-        {
-            Door3.transform.Rotate(90, 0, 0);
-            Door3.transform.Translate(0, 0, -1);
-            moveDoor3 = false;
-        }
-
-        if ((collision.gameObject.tag == "Door4") && (hasKey == true))
-        {
-
-            keyCount--;
-            moveDoor4 = true;
-           
-
-
-        }
-        if (moveDoor4 == true)
-        {
-            Door4.transform.Rotate(0, 90, 0);
-            Door4.transform.Translate(0, 0, -1);
-           
-        }
-
-
 
     }
 

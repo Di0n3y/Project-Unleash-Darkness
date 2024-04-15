@@ -19,32 +19,12 @@ public class Health : MonoBehaviour
         HideGameOverPanel();
     }
 
-
-    
-
-    public void CollisionDamage()
+    private void OnCollisionEnter(Collision collision)
     {
-       
-       
-            DoDamage(10);
-       
-    }
-
-    public void DoDamage(int val)
-    {
-
-
-            _currentHp -= Mathf.Abs(val);
-            if (_currentHp <= 0)
-            {
-                _onDie?.Invoke();
+        if (collision.gameObject.tag == "Enemy")
+        {
             ShowGameOverPanel();
-            _currentHp = _maxHp;
-            }
-
-
-        
-        
+        }
     }
 
     private void ShowGameOverPanel()

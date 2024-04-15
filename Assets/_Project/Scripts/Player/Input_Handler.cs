@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class Input_Handler : MonoBehaviour
 {
@@ -11,7 +12,10 @@ public class Input_Handler : MonoBehaviour
     public Animator animator;
     public bool playerIsOnGround = true;
     public bool _lanternOn = false;
+    public Transform lanternPartSpawn;
     public GameObject _lanternParticle;
+
+
 
     public void Start()
     {
@@ -69,13 +73,14 @@ public class Input_Handler : MonoBehaviour
             playerIsOnGround = false;
             animator.SetTrigger("Jump");
 
-        }else if (Input.GetKeyDown("e") && (_lanternOn == false))
+        } else if (Input.GetKeyDown("e") && (_lanternOn == false))
         {
             _lanternOn = true;
             _lantern.SetActive(true);
-            Instantiate(_lanternParticle);
-            
-        }else if (Input.GetKeyDown("e") && (_lanternOn == true))
+            Instantiate(_lanternParticle, lanternPartSpawn.position, lanternPartSpawn.rotation);
+
+        }
+        else if (Input.GetKeyDown("e") && (_lanternOn == true))
         {
             _lantern.SetActive(false);
             _lanternOn = false;
@@ -89,6 +94,7 @@ public class Input_Handler : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             playerIsOnGround = true;
+       
         }
     }
 }
