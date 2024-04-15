@@ -26,7 +26,7 @@ public class Floor_fall : MonoBehaviour
 
         if (stepped == true) 
         {
-            transform.Translate(0, -2*Time.deltaTime, 0);
+            transform.Translate(0, -1*Time.deltaTime, 0);
             
         }
          if (position.y <= para)

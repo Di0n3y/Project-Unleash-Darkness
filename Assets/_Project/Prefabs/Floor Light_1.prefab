@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4846373110145139649}
+  - component: {fileID: 6573515734720804241}
   m_Layer: 0
-  m_Name: Floor
-  m_TagString: Ground
+  m_Name: Floor Light_1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,6 +33,24 @@ Transform:
   - {fileID: 8088872378176203518}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6573515734720804241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5437191235314943084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 793d297e5f655414cb4a3464833de207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isOn: 0
+  _floorBulb: {fileID: 0}
+  counter: {fileID: 0}
+  resettingFloor: 0
+  _onMaterial: {fileID: 0}
+  _offMaterial: {fileID: 0}
 --- !u!1001 &8632217339218365717
 PrefabInstance:
   m_ObjectHideFlags: 0

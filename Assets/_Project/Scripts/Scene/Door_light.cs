@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class Door_light : MonoBehaviour
 {
     public float floorLights = 0;
+    public GameObject Door;
     public int floorTrigger;
     public bool _openDoor = false;
-    public bool moveDoorUp = false;
-    public bool moveDoorDown = false;
-    public Transform _limitDoorDown;
-    public Transform _limitDoorUp;
+    public GameObject wallDoor;
+
+
 
     [HideInInspector] public Floor_Light resetFloor;
     // Start is called before the first frame update
@@ -25,51 +27,32 @@ public class Door_light : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
-        float Abajo = _limitDoorDown.position.y;
-
-        float Arriba = _limitDoorUp.position.y;
-        if (floorLights == floorTrigger)
+      
+        if (floorLights >= floorTrigger)
         {
 
-            moveDoorUp = true;
+            _openDoor = true;
             floorLights = 0;
 
         }
 
 
-        if (moveDoorUp == true)
+        if (_openDoor == true)
         {
-            transform.Translate(0, 1 * Time.deltaTime, 0);
-            resetFloor = Object.FindFirstObjectByType<Floor_Light>();
-            resetFloor.resettingFloor = 1;
+            
+                Door.transform.Rotate(0, 0, -90);
+                Door.transform.Translate(0, 0, 0);
+            _openDoor = false;
+            
         }
-        else if (moveDoorUp == false)
+        else if (_openDoor == false)
         {
-            transform.Translate(0, 0, 0);
+            Door.transform.Translate(0, 0, 0);
         }
-        if (moveDoorDown == false)
-        {
-            transform.Translate(0, 0, 0);
-        }
-        else if (moveDoorUp == false)
-        {
-            transform.Translate(0, -1 * Time.deltaTime, 0);
-
-        }
-        if (transform.position.y >= Arriba)
-        {
-            moveDoorUp = false;
-            moveDoorDown = true;
-
-
-        }
-        if (transform.position.y <= Abajo)
-        {
-
-            moveDoorDown = false;
-        }
+       
     }
+   
 
 }

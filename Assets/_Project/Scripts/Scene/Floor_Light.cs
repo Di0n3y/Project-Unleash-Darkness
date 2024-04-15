@@ -29,12 +29,7 @@ public class Floor_Light : MonoBehaviour
             {
                 _floorBulb.material = _onMaterial;
             }
-            else if (_isOn == false)
-
-            {
-                _floorBulb.material = _offMaterial;
-
-            }
+            
 
 
         }

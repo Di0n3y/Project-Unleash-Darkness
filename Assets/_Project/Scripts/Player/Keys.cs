@@ -14,6 +14,8 @@ public class Keys : MonoBehaviour
     [SerializeField] private GameObject Door4;
 
 
+
+
     public bool hasKey = false;
     public int keyCount;
     public bool moveDoor1 = false;
@@ -66,6 +68,7 @@ public class Keys : MonoBehaviour
             moveDoor1= true;
 
 
+
         }
         if (moveDoor1 == true)
         {
@@ -81,11 +84,12 @@ public class Keys : MonoBehaviour
             moveDoor2 = true;
 
 
+
         }
         if (moveDoor2 == true)
         {
-            Door2.transform.Rotate(0, 90, 0);
-            Door2.transform.Translate(0, 0, -1);
+            Door2.transform.Rotate(0, 0, -90);
+            Door2.transform.Translate(-1, 0, 0);
             moveDoor2 = false;
         }
 
@@ -94,12 +98,13 @@ public class Keys : MonoBehaviour
 
             keyCount--;
             moveDoor3 = true;
+         
 
 
         }
         if (moveDoor3 == true)
         {
-            Door3.transform.Rotate(0, 90, 0);
+            Door3.transform.Rotate(90, 0, 0);
             Door3.transform.Translate(0, 0, -1);
             moveDoor3 = false;
         }
@@ -109,6 +114,7 @@ public class Keys : MonoBehaviour
 
             keyCount--;
             moveDoor4 = true;
+           
 
 
         }
@@ -116,7 +122,7 @@ public class Keys : MonoBehaviour
         {
             Door4.transform.Rotate(0, 90, 0);
             Door4.transform.Translate(0, 0, -1);
-            moveDoor4 = false;
+           
         }
 
 
