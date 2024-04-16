@@ -5,24 +5,30 @@ using UnityEngine;
 public class PauseGame : MonoBehaviour
 {
 
-    public GameObject panelPause;
-    void Start()
+   public GameObject pausePanel;
+    private bool isPaused = false;
+
+    void Update()
     {
-        panelPause.SetActive(false);
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePause();
+        }
     }
 
-    
-    public void ActivePause()
+    void TogglePause()
     {
+        isPaused = !isPaused;
+        Time.timeScale = isPaused ? 0f : 1f; 
 
-        panelPause.SetActive (true);
-        Time.timeScale = 0F;
-
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(isPaused); 
+        }
     }
 
-    public void DesactivePause()
+    public void ResumeGame()
     {
-        panelPause.SetActive(false);
-        Time.timeScale = 1F;
+        TogglePause();
     }
 }
