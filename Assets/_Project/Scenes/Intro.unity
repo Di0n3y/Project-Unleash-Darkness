@@ -710,7 +710,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7656876, y: 0.42429632}
   m_AnchorMax: {x: 1, y: 0.7432963}
-  m_AnchoredPosition: {x: -0.62316895, y: -0.14630127}
+  m_AnchoredPosition: {x: -0.6230469, y: -0.14630127}
   m_SizeDelta: {x: 1.1999512, y: 0.12322998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &190551932
@@ -949,7 +949,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 18.8, y: 0}
+  m_AnchoredPosition: {x: 18.800049, y: 0}
   m_SizeDelta: {x: -91.531204, y: -24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &296732570
@@ -1125,7 +1125,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -72.099976, y: 0.40699768}
+  m_AnchoredPosition: {x: -72.1001, y: 0.40701294}
   m_SizeDelta: {x: -202, y: -30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &322012866
@@ -1521,7 +1521,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.70811117}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.17926025}
+  m_AnchoredPosition: {x: 0, y: -0.17919922}
   m_SizeDelta: {x: 0, y: 0.3585205}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &403709226
@@ -2421,7 +2421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.39588305, y: 0.25500003}
   m_AnchorMax: {x: 0.70211697, y: 0.72}
-  m_AnchoredPosition: {x: -0.6000004, y: -0.3999977}
+  m_AnchoredPosition: {x: -0.5999985, y: -0.40000153}
   m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &674315054
@@ -3532,7 +3532,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23421691, y: 0.3313938}
   m_AnchorMax: {x: 1, y: 0.82219696}
-  m_AnchoredPosition: {x: -0.9599991, y: 1.5}
+  m_AnchoredPosition: {x: -0.95999146, y: 1.5}
   m_SizeDelta: {x: 1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &988684783
@@ -3615,7 +3615,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3062708, y: 0.77400005}
   m_AnchorMax: {x: 0.6923126, y: 0.96855557}
-  m_AnchoredPosition: {x: 1.5, y: -0.000061035156}
+  m_AnchoredPosition: {x: 1.5, y: 0}
   m_SizeDelta: {x: -3, y: -0.99998474}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1048821248
@@ -4276,7 +4276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -72.599976, y: 0.40699768}
+  m_AnchoredPosition: {x: -72.6001, y: 0.40701294}
   m_SizeDelta: {x: -201, y: -30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1160497044
@@ -4352,7 +4352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.30770367}
-  m_AnchoredPosition: {x: 0, y: 0.24676514}
+  m_AnchoredPosition: {x: 0, y: 0.24682617}
   m_SizeDelta: {x: 0, y: 0.49353027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1169808568
@@ -4913,7 +4913,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.125, y: 0.87600005}
   m_AnchorMax: {x: 0.14647916, y: 0.9102591}
-  m_AnchoredPosition: {x: 0.4000244, y: -82.191895}
+  m_AnchoredPosition: {x: 0.39990234, y: -82.191895}
   m_SizeDelta: {x: -1, y: 27.187653}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1288706607
@@ -7161,7 +7161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.125, y: 0.822}
   m_AnchorMax: {x: 0.14647916, y: 0.85800004}
-  m_AnchoredPosition: {x: -0.099975586, y: -122.90433}
+  m_AnchoredPosition: {x: -0.100097656, y: -122.90433}
   m_SizeDelta: {x: 0, y: 27.518463}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1838789867
@@ -7730,7 +7730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Oldman
+  m_text: Fosil
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d7ad01a4a5156f4384f8534a38c63e4, type: 2}
   m_sharedMaterial: {fileID: -4298056600197043408, guid: 8d7ad01a4a5156f4384f8534a38c63e4,
