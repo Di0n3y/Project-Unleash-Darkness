@@ -20,7 +20,7 @@ public class EnemyFollow : MonoBehaviour
         { 
         transform.LookAt(new Vector3(target.position.x, transform.position.y, target.position.z));
 
-        transform.Translate(0, 0, 1 * 4f * Time.deltaTime);
+        transform.Translate(0, 0, 1 * 2f * Time.deltaTime);
         }else if ( yep.EnemyOn==false)
         {
 
