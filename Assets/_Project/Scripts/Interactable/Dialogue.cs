@@ -12,13 +12,13 @@ public class Dialogue : MonoBehaviour, InteractableObject
 
     private void Start()
     {
-        HideGameWinPanel();
+        HideDialoguePanel();
     }
     public void Interact()
     {
 
 
-        ShowGameWinPanel();
+        ShowDialoguePanel();
 
 
 
@@ -26,7 +26,7 @@ public class Dialogue : MonoBehaviour, InteractableObject
    
        
 
-    private void ShowGameWinPanel()
+    private void ShowDialoguePanel()
     {
         if (gameWinPanel != null)
         {
@@ -35,7 +35,7 @@ public class Dialogue : MonoBehaviour, InteractableObject
         }
     }
 
-    private void HideGameWinPanel()
+    private void HideDialoguePanel()
     {
         if (gameWinPanel != null)
         {

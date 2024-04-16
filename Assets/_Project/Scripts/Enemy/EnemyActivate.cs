@@ -6,6 +6,7 @@ public class EnemyActivate : MonoBehaviour
 {
     public GameObject monster;
     public GameObject Player;
+    public LightMeter LightMeterScript;
     public float lightTime;
     public Input_Handler _Handler;
     public bool EnemyOn = false;
@@ -20,6 +21,8 @@ public class EnemyActivate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+      
         if (_Handler._lanternOn) 
         {
             lightTime += Time.deltaTime;

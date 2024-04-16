@@ -8,7 +8,7 @@ public class Checkpoint : MonoBehaviour
     public bool _newCheckpoint = false;
     public GameObject _Checkpoint;
     public GameObject _doorWall;
-    // Start is called before the first frame update
+    
     void Start()
     {
         _newCheckpoint = false;
