@@ -10737,7 +10737,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _lanternParticle
       value: 
-      objectReference: {fileID: 704059528435682016, guid: 4952ab16f4efc2d4abbc20fec841f6d1,
+      objectReference: {fileID: 5987572886358014243, guid: ebc92e9fd76c2d14b8830f801a0c1b51,
         type: 3}
     - target: {fileID: 1466461451403776942, guid: 5eb59d11c0ee7914cb0689ead0ed6fcd,
         type: 3}
