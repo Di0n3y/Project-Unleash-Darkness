@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Events;
 using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
@@ -15,10 +16,13 @@ public class Input_Handler : MonoBehaviour
     public Transform lanternPartSpawn;
     public GameObject _lanternParticle;
 
-
+    public AudioClip MoveSound;
+    public AudioClip LightSound;
+    private AudioSource audioSource;
 
     public void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         _lantern.SetActive(false);
         animator = GetComponent<Animator>();

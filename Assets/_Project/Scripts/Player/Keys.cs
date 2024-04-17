@@ -11,8 +11,9 @@ public class Keys : MonoBehaviour
     [SerializeField] private GameObject Door1;
     [SerializeField] private GameObject Door2;
 
-
-
+    public AudioClip keyPickupSound; 
+    public AudioClip doorOpenSound;  
+    private AudioSource audioSource;
 
 
     public bool hasKey = false;
@@ -27,10 +28,12 @@ public class Keys : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        audioSource = GetComponent<AudioSource>();
         hasKey = false;
         moveDoor1 = false;
         moveDoor2 = false;
-
+        
     }
 
     // Update is called once per frame
@@ -41,7 +44,9 @@ public class Keys : MonoBehaviour
        if(keyCount >=1)
         {
             hasKey=true;
-        }if(keyCount == 0) 
+            
+        }
+        if(keyCount == 0) 
         {
             hasKey = false;
         }else if(keyCount < 0) 
@@ -57,14 +62,14 @@ public class Keys : MonoBehaviour
         if (collision.gameObject.tag == "Key")
         {
             keyCount++;
-
+            audioSource.PlayOneShot(keyPickupSound);
         }
         if ((collision.gameObject.tag == "Door") && (hasKey == true))
         {
-
+            audioSource.PlayOneShot(doorOpenSound);
             keyCount--;
             moveDoor1 = true;
-
+           
 
 
         }
@@ -77,7 +82,7 @@ public class Keys : MonoBehaviour
 
         if ((collision.gameObject.tag == "Door2") && (hasKey == true))
         {
-
+          
             keyCount--;
             moveDoor2 = true;
 
@@ -86,6 +91,7 @@ public class Keys : MonoBehaviour
         }
         if (moveDoor2 == true)
         {
+            audioSource.PlayOneShot(doorOpenSound);
             Door2.transform.Rotate(0, 0, -90);
             Door2.transform.Translate(-1, 0, 0);
             moveDoor2 = false;

@@ -6,7 +6,8 @@ public class InputPlayer : MonoBehaviour
 {
     [SerializeField] private LayerMask _interactableLayer;
 
-  
+   
+
 
     void Update()
     {
