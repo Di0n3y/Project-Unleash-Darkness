@@ -10,9 +10,16 @@ public class EnemyActivate : MonoBehaviour
     public float lightTime;
     public Input_Handler _Handler;
     public bool EnemyOn = false;
+
+    public AudioClip EnemySound;
+    public AudioClip EnemyMusic;
+    private AudioSource audioSource;
+    private bool isEnemySoundPlaying = false;
+    
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         monster.SetActive(false);   
         lightTime = 0;
       
@@ -38,14 +45,19 @@ public class EnemyActivate : MonoBehaviour
 
     public void Monster()
     {
-        if (lightTime >= 11)
+        if (lightTime >= 11 && !isEnemySoundPlaying ) 
         {
             monster.SetActive(true);
             EnemyOn = true;
+            audioSource.PlayOneShot(EnemySound);
+         
+            isEnemySoundPlaying = true;
+
         } else if (lightTime <= 10)
         {
             monster.SetActive(false);
             EnemyOn = false;
+            isEnemySoundPlaying = false;
         }
     }
 }

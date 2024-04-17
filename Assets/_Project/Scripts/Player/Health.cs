@@ -11,10 +11,13 @@ public class Health : MonoBehaviour
     private int _currentHp = default;
     [SerializeField] private GameObject gameOverPanel;
 
+    public AudioClip DeathMusic;
+    private AudioSource audioSource;
 
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         _currentHp = _maxHp;
         HideGameOverPanel();
     }
@@ -32,7 +35,8 @@ public class Health : MonoBehaviour
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(true);
-            Time.timeScale = 0f; 
+            Time.timeScale = 0f;
+            audioSource.PlayOneShot(DeathMusic);
         }
     }
 

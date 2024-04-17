@@ -302,6 +302,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 940916143}
+    - targetCorrespondingSourceObject: {fileID: 6068332397206376900, guid: 0ea49c133f3c3fe41889b0cde6369f9c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 940916144}
   m_SourcePrefab: {fileID: 100100000, guid: 0ea49c133f3c3fe41889b0cde6369f9c, type: 3}
 --- !u!4 &15602121 stripped
 Transform:
@@ -5346,6 +5350,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   gameWinPanel: {fileID: 1048821246}
+  DialogueSound: {fileID: 8300000, guid: 69055b44402bd2f43bf2e75d2eeb7a86, type: 3}
 --- !u!114 &940916138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5394,6 +5399,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCharacter: {fileID: 1647240982}
+--- !u!82 &940916144
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940916136}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &966309362
 GameObject:
   m_ObjectHideFlags: 0
@@ -10103,6 +10205,16 @@ PrefabInstance:
       objectReference: {fileID: 1647240978}
     - target: {fileID: 1466461451403776942, guid: 5eb59d11c0ee7914cb0689ead0ed6fcd,
         type: 3}
+      propertyPath: LightSoundOn
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ffbd4e807f539f43babbaf5a0b544fc, type: 3}
+    - target: {fileID: 1466461451403776942, guid: 5eb59d11c0ee7914cb0689ead0ed6fcd,
+        type: 3}
+      propertyPath: LightSoundOff
+      value: 
+      objectReference: {fileID: 8300000, guid: 09f0836c15d560b4b91156c1b9821390, type: 3}
+    - target: {fileID: 1466461451403776942, guid: 5eb59d11c0ee7914cb0689ead0ed6fcd,
+        type: 3}
       propertyPath: _lanternParticle
       value: 
       objectReference: {fileID: 704059528435682016, guid: 4952ab16f4efc2d4abbc20fec841f6d1,
@@ -10187,6 +10299,16 @@ PrefabInstance:
       propertyPath: DoorWall2
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4663523478197558226, guid: 5eb59d11c0ee7914cb0689ead0ed6fcd,
+        type: 3}
+      propertyPath: doorOpenSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 60f1b2df7871d7c4d8a322fab16ba710, type: 3}
+    - target: {fileID: 4663523478197558226, guid: 5eb59d11c0ee7914cb0689ead0ed6fcd,
+        type: 3}
+      propertyPath: keyPickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e3137b32ccd853545b6d488c6adbaaef, type: 3}
     - target: {fileID: 7524246789483796281, guid: 5eb59d11c0ee7914cb0689ead0ed6fcd,
         type: 3}
       propertyPath: m_Icon
@@ -10313,6 +10435,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   gameOverPanel: {fileID: 0}
+  DeathMusic: {fileID: 0}
 --- !u!114 &1647240985
 MonoBehaviour:
   m_ObjectHideFlags: 0

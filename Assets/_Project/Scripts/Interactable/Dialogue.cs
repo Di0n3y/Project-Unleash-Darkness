@@ -9,9 +9,11 @@ public class Dialogue : MonoBehaviour, InteractableObject
 
     [SerializeField] private UnityEvent _onWin = new();
     [SerializeField] private GameObject gameWinPanel;
-
+    public AudioClip DialogueSound;
+    private AudioSource audioSource;
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         HideDialoguePanel();
     }
     public void Interact()
@@ -31,7 +33,7 @@ public class Dialogue : MonoBehaviour, InteractableObject
         if (gameWinPanel != null)
         {
             gameWinPanel.SetActive(true);
-       
+            audioSource.PlayOneShot(DialogueSound);
         }
     }
 

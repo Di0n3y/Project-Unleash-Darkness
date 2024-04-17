@@ -221,6 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monster: {fileID: 0}
   Player: {fileID: 0}
+  LightMeterScript: {fileID: 0}
   lightTime: 0
   _Handler: {fileID: 1466461451403776942, guid: 5eb59d11c0ee7914cb0689ead0ed6fcd,
     type: 3}
