@@ -3337,7 +3337,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.90188676, g: 0.014192542, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.037601102, b: 0.3509434, a: 1}
   m_Intensity: 497.8
   m_Range: 4.24
   m_SpotAngle: 30
@@ -3381,7 +3381,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
-  m_ColorTemperature: 1500
+  m_ColorTemperature: 8192
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -4634,7 +4634,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.90188676, g: 0.014192542, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.037601102, b: 0.3509434, a: 1}
   m_Intensity: 700
   m_Range: 8.26
   m_SpotAngle: 30
@@ -4678,7 +4678,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
-  m_ColorTemperature: 1500
+  m_ColorTemperature: 8192
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -8345,7 +8345,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.90188676, g: 0.014192542, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.037601102, b: 0.3509434, a: 1}
   m_Intensity: 700
   m_Range: 8.26
   m_SpotAngle: 30
@@ -8389,7 +8389,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
-  m_ColorTemperature: 1500
+  m_ColorTemperature: 8192
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -11442,7 +11442,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.90188676, g: 0.014192542, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.037601102, b: 0.3509434, a: 1}
   m_Intensity: 700
   m_Range: 16.6
   m_SpotAngle: 30
@@ -11486,7 +11486,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
-  m_ColorTemperature: 1500
+  m_ColorTemperature: 8192
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -14726,7 +14726,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.90188676, g: 0.014192542, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.037601102, b: 0.3509434, a: 1}
   m_Intensity: 700
   m_Range: 8.26
   m_SpotAngle: 30
@@ -14770,7 +14770,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
-  m_ColorTemperature: 1500
+  m_ColorTemperature: 8192
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -21058,7 +21058,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.90188676, g: 0.014192542, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.037601102, b: 0.3509434, a: 1}
   m_Intensity: 700
   m_Range: 8.26
   m_SpotAngle: 30
@@ -21102,7 +21102,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
-  m_ColorTemperature: 1500
+  m_ColorTemperature: 8192
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -21841,7 +21841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453653795}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13464838, y: -0.34753, z: 0.050502475, w: 0.92657554}
+  m_LocalRotation: {x: 0.13464837, y: -0.34753, z: 0.050502464, w: 0.92657554}
   m_LocalPosition: {x: 6.2200003, y: 3.35, z: -2.9699998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22024,7 +22024,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.90188676, g: 0.014192542, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.037601102, b: 0.3509434, a: 1}
   m_Intensity: 668.76
   m_Range: 5.2
   m_SpotAngle: 30
@@ -22068,7 +22068,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
-  m_ColorTemperature: 1500
+  m_ColorTemperature: 8192
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -25961,7 +25961,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594818220}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13464838, y: -0.34753, z: 0.050502475, w: 0.92657554}
+  m_LocalRotation: {x: 0.13464837, y: -0.34753, z: 0.050502464, w: 0.92657554}
   m_LocalPosition: {x: 6.2200003, y: 3.35, z: -2.9699998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -26332,7 +26332,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.90188676, g: 0.014192542, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.037601102, b: 0.3509434, a: 1}
   m_Intensity: 500
   m_Range: 8.26
   m_SpotAngle: 30
@@ -26376,7 +26376,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
-  m_ColorTemperature: 1500
+  m_ColorTemperature: 8192
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -34025,7 +34025,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.90188676, g: 0.014192542, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.037601102, b: 0.3509434, a: 1}
   m_Intensity: 700
   m_Range: 8.26
   m_SpotAngle: 30
@@ -34069,7 +34069,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
-  m_ColorTemperature: 1500
+  m_ColorTemperature: 8192
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
