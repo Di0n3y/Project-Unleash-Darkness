@@ -21,9 +21,6 @@ EditorBuildSettings:
     path: Assets/_Project/Scenes/Settings.unity
     guid: 4c73266508668524c8f6569f22f5231a
   - enabled: 1
-    path: Assets/_Project/Scenes/Game Test.unity
-    guid: fae20c7e6a2d215449f55b533bc30695
-  - enabled: 1
     path: Assets/_Project/Scenes/To be Continued.unity
     guid: bffae288f38d6dd45aa47dcd7876ba94
   - enabled: 1
