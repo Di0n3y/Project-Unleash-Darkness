@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using MagasLib.StateMachine;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Keys : MonoBehaviour
 {
-    
 
+    [SerializeField] private GameObject KeyImage;
     [SerializeField] private GameObject Door1;
     [SerializeField] private GameObject Door2;
 
@@ -21,7 +22,7 @@ public class Keys : MonoBehaviour
     public bool moveDoor1 = false;
     public bool moveDoor2 = false;
 
-
+    [SerializeField] private GameObject KeyAlertPanel;
 
 
 
@@ -29,7 +30,8 @@ public class Keys : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+       HideKeyAlertPanel();
+        KeyImage.SetActive(false);
         audioSource = GetComponent<AudioSource>();
         hasKey = false;
         moveDoor1 = false;
@@ -45,7 +47,9 @@ public class Keys : MonoBehaviour
        if(keyCount >=1)
         {
             hasKey=true;
-            
+            ShowKeyAlertPanel();
+            KeyImage.SetActive(true);
+
         }
         if(keyCount == 0) 
         {
@@ -57,6 +61,23 @@ public class Keys : MonoBehaviour
         
     }
 
+    private void ShowKeyAlertPanel()
+    {
+        if (KeyAlertPanel != null)
+        {
+            KeyAlertPanel.SetActive(true);
+           
+        
+        }
+    }
+
+    private void HideKeyAlertPanel()
+    {
+        if (KeyAlertPanel != null)
+        {
+            KeyAlertPanel.SetActive(false);
+        }
+    }
     private void OnCollisionEnter(Collision collision)
     {
 
@@ -67,6 +88,8 @@ public class Keys : MonoBehaviour
         }
         if ((collision.gameObject.tag == "Door") && (hasKey == true))
         {
+            KeyImage.SetActive(false);
+            HideKeyAlertPanel();
             audioSource.PlayOneShot(doorOpenSound);
             keyCount--;
             moveDoor1 = true;
@@ -83,7 +106,9 @@ public class Keys : MonoBehaviour
 
         if ((collision.gameObject.tag == "Door2") && (hasKey == true))
         {
-          
+            KeyImage.SetActive(false);
+            HideKeyAlertPanel();
+            audioSource.PlayOneShot(doorOpenSound);
             keyCount--;
             moveDoor2 = true;
 
@@ -92,7 +117,7 @@ public class Keys : MonoBehaviour
         }
         if (moveDoor2 == true)
         {
-            audioSource.PlayOneShot(doorOpenSound);
+            
             Door2.transform.Rotate(0, 0, -90);
             Door2.transform.Translate(-1, 0, 0);
             moveDoor2 = false;

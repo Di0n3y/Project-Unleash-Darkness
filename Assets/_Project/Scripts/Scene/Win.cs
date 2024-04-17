@@ -9,10 +9,12 @@ public class Win : MonoBehaviour
     [SerializeField] private UnityEvent _onWin = new();
     [SerializeField] private GameObject gameWinPanel;
 
-
+    public AudioClip WinMusic;
+    private AudioSource audioSource;
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         HideGameWinPanel();
     }
 
@@ -30,6 +32,7 @@ public class Win : MonoBehaviour
         {
             gameWinPanel.SetActive(true);
             Time.timeScale = 0f;
+            audioSource.PlayOneShot(WinMusic);
         }
     }
 
